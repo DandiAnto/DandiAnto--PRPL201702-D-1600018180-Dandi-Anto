@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+  <title>MY Database</title>
+  </head>
+    <link href="css1.css" rel="stylesheet" type="text/css">
+    <body>
+   	<div class="judul" id="home"><br>WELCOME TO DMG_ HOTEL<br></div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Reservation">Reservation</a></li>
+  <li><a href="#contact">Gallery</a></li>
+  <li><a href="#contact">About Us</a></li>
+</ul>
+	<div class = "transparan">
+		<div class="judul_Reservation" id="Reservation"> Reservation <br></div>
+	<form action="simpan_customer.php" method="post">
+      
+        <label>No Identitias</label>
+        <input type="text" name="No" required>
+        <label>Nama</label>
+        <input type="text" name="nama" required>
+        <label>No Telfon</label>
+        <input type="text" name="Notelfon" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Jenis Kamar</label>
+          <select  name="jeniskamar" required>
+    	  <option value="Standar">Standar</option>
+    	  <option value="Deluxe Room">Deluxe Room</option>
+   	 	  <option value="Suite">Suite</option>
+  		</select>
+        <label>Check In</label>
+        <input type="date" name="checkin" required>
+        <label>Check Out</label>
+        <input type="date" name="checkout" required>
+		<input type="submit" value="Submit">   
+	    <input type="reset" value="Reset">
+
+   
+  </form>
+</div>
+
+</body>
+</html>
